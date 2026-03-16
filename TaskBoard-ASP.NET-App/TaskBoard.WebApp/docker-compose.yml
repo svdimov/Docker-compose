@@ -1,0 +1,31 @@
+
+services:
+    taskboard:
+        ports:
+            - 5000:80
+        container_name: web_app
+        restart: on-failure
+        networks:
+            - task_board_network
+        image: svdimov85/taskboard:0.0.1
+    server:
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=yourStrongPassword12#
+        ports:
+            - 1433:1433
+        volumes:
+            - sqldata:/var/opt/mssql
+        networks:
+            - task_board_network
+        container_name: sqlserver
+        image: mcr.microsoft.com/mssql/server
+        
+networks:
+    task_board_network:
+        external: true
+        name: task_board_network
+volumes:
+    sqldata:
+        external: true
+        name: sqldata

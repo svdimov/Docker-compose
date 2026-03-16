@@ -1,0 +1,43 @@
+task-1 mariadb
+docker run -d --network mariadb_network --name mariadb_server --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb
+
+docker run -it --network mariadb_network --name mariadb_client --rm mariadb mariadb -h mariadb_server  -u example-user -p
+
+task-2 taskboard
+docer build -f .\TaskBoard.WebApp\Dockerfile -t taskboard .
+docker tag taskboard svdimov85/taskboard
+
+task-3 traccker_app
+docker build -t svdimov85/tracker_app
+docker run -d -p 80:80 --name tracker svdimov85/tracker_app
+
+docker login 
+docker push svdimov85/tracker_app
+
+
+task-4 	TaskBoard App network
+
+docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=yourStrongPassword12# -p 1433:1433 -v sqldata:/var/opt/mssql --rm --network task_board_network --name sqlserver -d mcr.microsoft.com/mssql/server .
+docker build -f .\TaskBoard.WebApp\Dockerfile -t svdimov85/taskboard:0.0.1 .
+docker run -p 5000:80 --rm --name web_app --network task_board_network svdimov85/taskboard:0.0.1
+
+task-5 TODO APP
+fot backend - docker build -t backend .
+
+docker run -d --name backend --network react-express  --network express-mongo  backend
+
+docker run -d --name frontend -p 3000:3000 --network react-express frontend
+
+docker run -d --name mongo -v data:/data/db  --network express-mongo mongo
+
+task- 6 
+docker run -p 5000:80  --name web_app --network task_board_network svdimov85/taskboard:0.0.1
+docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=yourStrongPassword12# -p 1433:1433 -v sqldata:/var/opt/mssql  --network task_board_network --name sqlserver -d mcr.microsoft.com/mssql/server .
+create - docker-compose.yml
+
+docker compose build 
+docker-compose up -d
+
+task 7 -Reseller-App  
+in the path folder of app -> mvn clean package -DskipTests
+PS C:\Users\Stefoto\Documents\DevOps-Cloud-and-conteainer\Docker-compose\Reseller-App> mvn clean package -DskipTests

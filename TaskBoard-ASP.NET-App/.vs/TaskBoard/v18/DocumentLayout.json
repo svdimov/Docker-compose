@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Stefoto\\Documents\\DevOps-Cloud-and-conteainer\\Docker-compose\\TaskBoard-ASP.NET-App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8ABA2C-75DE-4D3C-B98D-D76B8ED8DCAA}|TaskBoard.Data\\TaskBoard.Data.csproj|c:\\users\\stefoto\\documents\\devops-cloud-and-conteainer\\docker-compose\\taskboard-asp.net-app\\taskboard.data\\taskboard.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D8ABA2C-75DE-4D3C-B98D-D76B8ED8DCAA}|TaskBoard.Data\\TaskBoard.Data.csproj|solutionrelative:taskboard.data\\taskboard.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC759849-6C9C-4CF7-94B0-40C679137CCC}|TaskBoard.WebApp\\TaskBoard.WebApp.csproj|c:\\users\\stefoto\\documents\\devops-cloud-and-conteainer\\docker-compose\\taskboard-asp.net-app\\taskboard.webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CC759849-6C9C-4CF7-94B0-40C679137CCC}|TaskBoard.WebApp\\TaskBoard.WebApp.csproj|solutionrelative:taskboard.webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskBoard.Data",
+              "DocumentMoniker": "C:\\Users\\Stefoto\\Documents\\DevOps-Cloud-and-conteainer\\Docker-compose\\TaskBoard-ASP.NET-App\\TaskBoard.Data\\TaskBoard.Data.csproj",
+              "RelativeDocumentMoniker": "TaskBoard.Data\\TaskBoard.Data.csproj",
+              "ToolTip": "C:\\Users\\Stefoto\\Documents\\DevOps-Cloud-and-conteainer\\Docker-compose\\TaskBoard-ASP.NET-App\\TaskBoard.Data\\TaskBoard.Data.csproj",
+              "RelativeToolTip": "TaskBoard.Data\\TaskBoard.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-16T11:13:28.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Stefoto\\Documents\\DevOps-Cloud-and-conteainer\\Docker-compose\\TaskBoard-ASP.NET-App\\TaskBoard.WebApp\\Dockerfile",
+              "RelativeDocumentMoniker": "TaskBoard.WebApp\\Dockerfile",
+              "ToolTip": "C:\\Users\\Stefoto\\Documents\\DevOps-Cloud-and-conteainer\\Docker-compose\\TaskBoard-ASP.NET-App\\TaskBoard.WebApp\\Dockerfile",
+              "RelativeToolTip": "TaskBoard.WebApp\\Dockerfile",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-16T09:53:03.474Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
