@@ -31,6 +31,10 @@ services:
 
 networks:
   backend:
+    external: true
+    name: backend_network
 
 volumes:
   mysql-data:
+    external: true
+    name: mysql_data
